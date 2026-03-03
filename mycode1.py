@@ -10,7 +10,7 @@ data = {'Name': ['Alice','Bob','Charlie'],
 df = pd.DataFrame(data)       
 
 #adding new row to df for V2
-new_row_loc = {'name': 'V2', 'Age': 20, 'City': 'city1'}
+new_row_loc = {'name': 'GF1', 'Age': 20, 'City': 'city1'}
 df.loc[len(df.index)] = new_row_loc
 
 #adding new row to df for V3
@@ -27,4 +27,4 @@ file_path =  os.path.join(data_dir,'sample_data.csv ')
 #Save the dataframe to csv file, including column names
 df.to_csv(file_path,index= False)
 
-print(f"CSV file saved to {file_path}")
+print(f"CSV file saved to {file_path}") 
